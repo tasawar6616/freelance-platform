@@ -1,0 +1,132 @@
+/* Custom Header */
+.custom-header {
+  background-color: #fff9e6; /* Light beige background */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navWrap {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  background-color: var(--white);
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 17rem; /* Set the maximum width for the logo */
+}
+
+.logoImg {
+  max-height: 40px; /* Logo height */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  max-width: 200px;
+}
+
+.navbar-brand img {
+  max-height: 40px; /* Limit logo height */
+}
+
+/* Nav Links */
+.nav-link-custom {
+  color: #333 !important;
+  font-size: 16px !important;
+  margin-right: 20px !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.nav-link-custom:hover {
+  color: #000 !important;
+  text-decoration: underline !important;
+}
+
+/* Buttons */
+.custom-register {
+  background-color: #000 !important; /* Register button styling */
+  border: none !important;
+  padding: 8px 20px !important;
+  border-radius: 5px !important;
+}
+
+.custom-signin {
+  background-color: #ff4d4d !important; /* Sign In button styling */
+  border: none !important;
+  padding: 8px 20px !important;
+  border-radius: 5px !important;
+}
+
+.custom-register:hover, .custom-signin:hover {
+  opacity: 0.9 !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #333 !important;
+  padding: 8px 16px !important;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa !important;
+  color: #000 !important;
+}
+
+/* For Mobile */
+@media (max-width: 992px) {
+  /* Navbar collapse and toggle */
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Navbar links */
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Buttons */
+  .custom-register, .custom-signin {
+    width: 100%; /* Full width for buttons on mobile */
+    margin-top: 10px;
+  }
+
+  /* Navbar items container */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Logo responsiveness */
+  .logoWrap {
+    max-width: 14rem; /* Make logo smaller on smaller screens */
+  }
+
+  .logoImg {
+    max-height: 30px; /* Adjust logo height on smaller screens */
+  }
+}
+
