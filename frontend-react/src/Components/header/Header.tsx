@@ -23,11 +23,11 @@ const generalNavItems: NavItem[] = [
 const Header = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const handleNavClose = () => setIsNavOpen(false);
+    //const handleNavClose = () => setIsNavOpen(false);
 
   const handleToggleClick = () => setIsNavOpen((prev) => !prev);
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const navItems: NavItem[] =  generalNavItems;
  return (
    <Navbar expand="lg" className="navWrap custom-header">
