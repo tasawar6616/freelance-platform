@@ -1,0 +1,41 @@
+.form-check a span{
+  float: right;
+      color: #242424;
+}
+.form-check a span:hover{
+        color: #fe696a;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+}
+.btn-primary{
+     margin-left: 0px !important;
+    background-color: transparent !important;
+    border: 0px !important;
+    font-size: 14px !important;
+}
+.forget_pwd .modal-header {
+    padding: 20px 30px;
+    background-color: #242424;
+    border-radius: 4px 4px 0 0;
+}
+
+.forget_pwd .modal-title  {
+    color: #FFF !important;
+    font-size: 18px;
+}
+
+.forget_pwd .modal-body {
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 0 0 4px 4px;
+}
+
+.forget_pwd .btn-primary{
+    margin-left: 0px !important;
+}
+
+.modal-header .btn-close {
+  color: red !important;
+  /* Optional: Ensure the button is visible on different backgrounds */
+  background-color: transparent !important;
+}
