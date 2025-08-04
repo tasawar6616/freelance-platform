@@ -90,6 +90,10 @@
   color: #000 !important;
 }
 
+.primary-btn{
+  margin-left: 10px !important;
+}
+
 /* For Mobile */
 @media (max-width: 992px) {
   /* Navbar collapse and toggle */

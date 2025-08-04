@@ -27,6 +27,8 @@ const Header = () => {
 
   const handleToggleClick = () => setIsNavOpen((prev) => !prev);
 
+    const navigate = useNavigate();
+
     // const navigate = useNavigate();
     const navItems: NavItem[] =  generalNavItems;
  return (
@@ -57,8 +59,12 @@ const Header = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Button variant="dark" className="me-2 custom-register">REGISTER</Button>
-            <Button variant="danger" className="custom-signin">SIGN IN</Button>
+            <Button onClick={() => {
+              navigate('/register');
+            }} variant="dark" className="me-2 btn secondary-btn">REGISTER</Button>
+            <Button onClick={() => {
+              navigate('/login');
+            }} variant="danger" className="btn primary-btn">SIGN IN</Button>
           </Nav>
         </Navbar.Collapse>
        

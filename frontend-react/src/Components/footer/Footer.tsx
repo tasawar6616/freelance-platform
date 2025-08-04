@@ -1,4 +1,3 @@
-// import React from 'react';
 import { Container, Row, Col, ListGroup, Button } from 'react-bootstrap';
 import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaInstagram } from 'react-icons/fa';
 import './footer.css';  // CSS for styling
