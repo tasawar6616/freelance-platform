@@ -1,8 +1,8 @@
 /* Custom Header */
 .custom-header {
-  background-color: #fff9e6; /* Light beige background */
+  background-color: transparent; /* Light beige background */
   padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +11,7 @@
 .navWrap {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
-  background-color: var(--white);
+  background-color: transparent;
 }
 
 .logoWrap {
