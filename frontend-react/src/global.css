@@ -109,6 +109,12 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+.padding-bottom-80 {
+    padding-bottom: 80px;
+}
+
+
 /* media-Quries */
 
 /* max 1600px */
