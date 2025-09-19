@@ -1,5 +1,4 @@
 import { Col } from 'react-bootstrap';
-import { useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';

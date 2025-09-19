@@ -4,7 +4,7 @@ import Footer from '../Components/footer/Footer';
 import { useLocation } from 'react-router-dom';
 const Layout = ({ children } : { children : React.ReactNode}) => {
   const location = useLocation();
-  const isHome = location.pathname === '/';
+//  const isHome = location.pathname === '/';
  return (
     <>
     <div className="header-hero-wrapper">
