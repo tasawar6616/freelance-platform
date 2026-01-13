@@ -1,8 +1,8 @@
-import React from 'react'
+// import React from 'react'
 import Button from 'react-bootstrap/Button';
 import { Container } from 'react-bootstrap';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -23,11 +23,13 @@ const generalNavItems: NavItem[] = [
 const Header = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const handleNavClose = () => setIsNavOpen(false);
+    //const handleNavClose = () => setIsNavOpen(false);
 
   const handleToggleClick = () => setIsNavOpen((prev) => !prev);
 
     const navigate = useNavigate();
+
+    // const navigate = useNavigate();
     const navItems: NavItem[] =  generalNavItems;
  return (
    <Navbar expand="lg" className="navWrap custom-header">
@@ -57,8 +59,12 @@ const Header = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Button variant="dark" className="me-2 custom-register">REGISTER</Button>
-            <Button variant="danger" className="custom-signin">SIGN IN</Button>
+            <Button onClick={() => {
+              navigate('/register');
+            }} variant="dark" className="me-2 btn secondary-btn">REGISTER</Button>
+            <Button onClick={() => {
+              navigate('/login');
+            }} variant="danger" className="btn primary-btn">SIGN IN</Button>
           </Nav>
         </Navbar.Collapse>
        

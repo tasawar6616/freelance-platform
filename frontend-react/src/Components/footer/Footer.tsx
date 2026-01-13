@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row, Col, ListGroup, Button } from 'react-bootstrap';
 import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaInstagram } from 'react-icons/fa';
 import './footer.css';  // CSS for styling
@@ -9,28 +8,29 @@ const Footer = () => {
    
     <footer className="custom-footer">
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center padding-bottom-80">
           {/* Left side: Logo and Social Links */}
-          <Col xs={12} md={3} className="text-center text-md-left">
+          <Col xxl={4} xl={3} lg={12} sm={12} md={12} className="text-md-left">
             <div className="footer-logo">
               <img src={Logo} alt="Xertio" className="footer-logo-img" />
+              
             </div>
-            <div className="social-icons">
+            <p className="footer-description">
+              A modern user-focused, premium freelance marketplace WordPress Theme, developed using best practices from the market.
+            </p>
+            <div className="fr-footer-icons social-icons">
               <Button variant="link" className="social-icon"><FaFacebook /></Button>
               <Button variant="link" className="social-icon"><FaTwitter /></Button>
               <Button variant="link" className="social-icon"><FaLinkedin /></Button>
               <Button variant="link" className="social-icon"><FaYoutube /></Button>
               <Button variant="link" className="social-icon"><FaInstagram /></Button>
             </div>
-            <p className="footer-description">
-              A modern user-focused, premium freelance marketplace WordPress Theme, developed using best practices from the market.
-            </p>
+            
           </Col>
 
           {/* Right side: Job Locations, Services Locations, Most Visited Links */}
-          <Col xs={12} md={9}>
-            <Row>
-              <Col xs={12} md={4}>
+          <Col xxl={3} lg={4} xl={3} xs={12} sm={6} md={4}>
+              
                 <h3 className="h3">Job Locations</h3>
                 <ListGroup>
                   <ListGroup.Item>Arad, Bahrain</ListGroup.Item>
@@ -39,9 +39,9 @@ const Footer = () => {
                   <ListGroup.Item>Muharraq</ListGroup.Item>
                   <ListGroup.Item>Germany</ListGroup.Item>
                 </ListGroup>
-              </Col>
-
-              <Col xs={12} md={4}>
+              
+             </Col>
+             <Col xxl={3} lg={4} xl={3} xs={12} sm={6} md={4}>
                 <h3 className="h3">Services Locations</h3>
                 <ListGroup>
                   <ListGroup.Item>Pakistan</ListGroup.Item>
@@ -52,7 +52,7 @@ const Footer = () => {
                 </ListGroup>
               </Col>
 
-              <Col xs={12} md={4}>
+              <Col xxl={2} lg={4} xl={3} xs={12} sm={6} md={4}>
                 <h3 className="h3">Most Visited Links</h3>
                 <ListGroup>
                   <ListGroup.Item>Blog</ListGroup.Item>
@@ -62,8 +62,7 @@ const Footer = () => {
                   <ListGroup.Item>Terms and Conditions</ListGroup.Item>
                 </ListGroup>
               </Col>
-            </Row>
-          </Col>
+            
         </Row>
         </Container>
         </footer>
